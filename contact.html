@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Professional Home Nursing Services in Karachi. Book a home visit for IV injections, medication care, wound dressing, drips, or catheter care.">
+  <title>Contact & Booking | Professional Home Nursing Services in Karachi</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-group">
+        <div class="logo-title"><i class="fa-solid fa-user-nurse"></i> Home Nursing <span>Care</span></div>
+        <div class="logo-subtitle">Professional Care at Your Doorstep</div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Nursing Service</a>
+        <button class="btn btn-whatsapp" data-whatsapp-action><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</button>
+      </div>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="logo-group">
+        <div class="logo-title"><i class="fa-solid fa-user-nurse"></i> Home Nursing <span>Care</span></div>
+        <div class="logo-subtitle">Professional Care at Your Doorstep</div>
+      </div>
+      <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="about.html" class="drawer-link">About</a>
+      <a href="index.html#why-choose-us" class="drawer-link">Why Choose Us</a>
+      <a href="contact.html" class="drawer-link active">Contact</a>
+    </div>
+    <div class="drawer-actions">
+      <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Nursing Service</a>
+      <button class="btn btn-whatsapp" data-whatsapp-action><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</button>
+    </div>
+  </aside>
+
+  <!-- PAGE HEADER HERO -->
+  <section class="hero" style="padding: 60px 0;">
+    <div class="container" style="text-align: center;">
+      <div class="section-badge"><i class="fa-solid fa-paper-plane"></i> BOOK A VISIT</div>
+      <h1 class="hero-title" style="font-size: 2.8rem;">Request Home Nursing Service</h1>
+      <p class="hero-text" style="max-width: 680px; margin: 0 auto;">
+        Fill out the service request details below or connect directly via WhatsApp for quick response.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTACT FORM SECTION -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form-card reveal">
+          <form id="nursingRequestForm">
+            <div class="form-group-grid">
+              <div class="form-group">
+                <label class="form-label" for="fullName">Full Name *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Tariq Ahmed" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phoneNum">Phone / WhatsApp *</label>
+                <input type="tel" id="phoneNum" class="form-control" placeholder="0300 1234567" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="karachiArea">Area in Karachi *</label>
+                <input type="text" id="karachiArea" class="form-control" placeholder="e.g. DHA Phase 5 / Clifton" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="reqService">Required Service *</label>
+                <select id="reqService" class="form-control" required>
+                  <option value="" disabled selected>Select a Nursing Service</option>
+                  <option value="IV/IM Injections">IV / IM Injections</option>
+                  <option value="Medication Nursing Care">Medication Nursing Care</option>
+                  <option value="Drips">IV Drips Assistance</option>
+                  <option value="Dressing & Stitch Care">Dressing & Stitch Care</option>
+                  <option value="NG Tube Care">NG Tube Care</option>
+                  <option value="Foley Catheter Care">Foley Catheter Care</option>
+                  <option value="Other Assistance">Other Home Nursing Care</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="prefDate">Preferred Visit Date</label>
+                <input type="date" id="prefDate" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="prefTime">Preferred Visit Time</label>
+                <input type="time" id="prefTime" class="form-control">
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="reqMessage">Message / Medical Instructions Details</label>
+                <textarea id="reqMessage" class="form-control" placeholder="Mention any specific doctor instructions or patient condition..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;"><i class="fa-solid fa-paper-plane"></i> Request Nursing Service</button>
+          </form>
+        </div>
+
+        <!-- Info Card -->
+        <div class="contact-info-card reveal">
+          <div>
+            <h3 class="contact-info-title">Prefer WhatsApp?</h3>
+            <p class="contact-info-desc" style="margin-top: 6px;">For instant inquiries and immediate scheduling response:</p>
+            <button class="btn btn-whatsapp" style="width: 100%; margin-top: 16px;" data-whatsapp-action data-whatsapp-msg="Hello, I want to book a home nursing visit in Karachi."><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</button>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 24px;">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-city"></i></div>
+              <div>
+                <h4 class="contact-info-title">Service Areas</h4>
+                <p class="contact-info-desc">Clifton, DHA, Gulshan-e-Iqbal, PECHS, North Nazimabad & nearby Karachi locations</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-user-clock"></i></div>
+            <div>
+              <h4 class="contact-info-title">Service Scheduling</h4>
+              <p class="contact-info-desc">Visits arranged according to patient & family preferred times</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMERGENCY NOTICE -->
+  <section class="container reveal">
+    <div class="urgent-notice">
+      <div class="urgent-content">
+        <div class="urgent-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div>
+          <h3 class="urgent-title">Need Urgent Medical Attention?</h3>
+          <p class="urgent-desc">For serious or life-threatening emergencies, contact your local emergency medical service or visit the nearest emergency department immediately.</p>
+        </div>
+      </div>
+      <button class="btn btn-secondary" data-whatsapp-action style="white-space: nowrap;"><i class="fa-brands fa-whatsapp"></i> Contact Nursing Service</button>
+    </div>
+  </section>
+
+  <!-- DEMO SUCCESS MODAL -->
+  <div class="demo-modal" id="demoSuccessModal">
+    <div class="demo-modal-content">
+      <div class="demo-modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 style="font-size: 1.5rem; margin-bottom: 12px; color: var(--primary-navy);">Request Submitted</h3>
+      <p style="color: var(--text-body); font-size: 0.95rem; margin-bottom: 24px; line-height: 1.6;">
+        Thank you. This is a demo form. In the production website, your request would be sent to the nursing service.
+      </p>
+      <button class="btn btn-primary" id="closeModalBtn" style="width: 100%;">Close Demo Window</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><i class="fa-solid fa-user-nurse"></i> Home Nursing <span>Care</span></div>
+          <p class="footer-sub">Registered Staff Nurse • Professional Care at Your Doorstep</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">IV / IM Injections</a>
+            <a href="services.html" class="footer-link">Medication Care</a>
+            <a href="services.html" class="footer-link">Wound Dressing</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links">
+            <div class="footer-link"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</div>
+            <div class="footer-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp Support</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Professional Home Nursing Services. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <div class="floating-actions">
+    <button class="back-to-top" id="backToTop" aria-label="Scroll back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="floating-whatsapp">
+      <div class="whatsapp-tooltip">Chat on WhatsApp</div>
+      <button class="whatsapp-fab" data-whatsapp-action aria-label="Open WhatsApp Chat"><i class="fa-brands fa-whatsapp"></i></button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
